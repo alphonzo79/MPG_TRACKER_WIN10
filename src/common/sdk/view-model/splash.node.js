@@ -20,7 +20,7 @@ var instanceMembers = {
             main.getComponent("messageService").send("NavigateToMessage", {
                 viewKey: "home"
             });
-        }, 10000);
+        }, 1000);
     }
 };
 

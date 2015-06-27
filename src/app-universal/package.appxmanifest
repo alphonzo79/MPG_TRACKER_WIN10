@@ -13,8 +13,8 @@
   <mp:PhoneIdentity PhoneProductId="c315df64-6226-4bd3-bdfd-0202f963217a" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>MetroNode-Bootstrap-WUP</DisplayName>
-    <PublisherDisplayName>todd</PublisherDisplayName>
+    <DisplayName>MPG Tracker</DisplayName>
+    <PublisherDisplayName>Joe Rowley</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
 
@@ -32,8 +32,8 @@
       StartPage="default.html">
 
       <uap:VisualElements
-        DisplayName="MetroNode-Bootstrap-WUP"
-        Description="MetroNode-Bootstrap-WUP"
+        DisplayName="MPG Tracker"
+        Description="MPG Tracker"
         BackgroundColor="#464646"
         Square150x150Logo="images\Logo.png"
         Square44x44Logo="images\SmallLogo.png">

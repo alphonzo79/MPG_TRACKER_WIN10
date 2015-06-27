@@ -1,0 +1,12 @@
+﻿// For details on localizing a Windows app, see: http://go.microsoft.com/fwlink/?LinkId=212836
+
+{
+    "appName"              : "MPG Tracker",
+    "_appName.comment"     : "The name of the application",
+
+    "lastFillUp"        : "Last Fill-Up",
+    "mpg"               : "MPG",
+    "logAFillUp"        : "Log A Fill-Up",
+    "viewReports"       : "View MPG Reports",
+    "settings"          : "Settings"
+}

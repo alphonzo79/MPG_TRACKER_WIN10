@@ -16,6 +16,7 @@
     <Content Include="$(MSBuildThisFileDirectory)images\smalllogo.scale-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)images\splashscreen.scale-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)images\storelogo.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)model\fillupModel.js" />
     <Content Include="$(MSBuildThisFileDirectory)ui.js" />
     <Content Include="$(MSBuildThisFileDirectory)vendor\Microsoft.WinJS.4.0\css\ui-dark-intrinsics.css" />
     <Content Include="$(MSBuildThisFileDirectory)vendor\Microsoft.WinJS.4.0\css\ui-dark.css" />
@@ -39,6 +40,7 @@
     <Content Include="$(MSBuildThisFileDirectory)view\splash\splash.js" />
   </ItemGroup>
   <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)strings\en-US\resources.resjson" />
     <PRIResource Include="$(MSBuildThisFileDirectory)vendor\Microsoft.WinJS.4.0-strings\af-za\Microsoft.WinJS.resjson" />
     <PRIResource Include="$(MSBuildThisFileDirectory)vendor\Microsoft.WinJS.4.0-strings\am-et\Microsoft.WinJS.resjson" />
     <PRIResource Include="$(MSBuildThisFileDirectory)vendor\Microsoft.WinJS.4.0-strings\ar-sa\Microsoft.WinJS.resjson" />
