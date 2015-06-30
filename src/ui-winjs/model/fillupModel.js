@@ -1,5 +1,6 @@
-﻿WinJS.Namespace.define("Fillup", {
+﻿WinJS.Namespace.define("Fillups", {
     Fillup: WinJS.Class.define(function (payload) {
+        this.id = payload.id;
         this.carId = payload.carId;
         this.dateLong = payload.date;
         this.milesFloat = payload.miles;
@@ -10,6 +11,7 @@
         this.displayDate = this.figureDisplayDate();
     },
         {
+            id: null,
             carId: null,
             dateLong: null,
             milesFloat: null,
@@ -39,7 +41,8 @@
                         month: "short",
                         day: "numeric"
                     };
-                    result = dateObj.toLocaleDateString("en-US", options);
+                    var locale = Windows.Globalization.ApplicationLanguages.languages[0];
+                    result = dateObj.toLocaleDateString(locale, options);
                 }
 
                 return result;

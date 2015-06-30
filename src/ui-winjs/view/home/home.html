@@ -17,12 +17,16 @@
             </h1>
         </header>
         <section aria-label="Main content" role="main">
-            <div id="homepageLatest">
-                <div class="purpleText mediumText" id="lastFillUp" data-win-res="{textContent: 'lastFillUp'}"></div>
+            <div id="homepageLatest" class="homepageMain">
+                <div class="purpleText mediumText semiBoldText" id="lastFillUp" data-win-res="{textContent: 'lastFillUp'}"></div>
                 <div class="greyText smallText" id="vehicleName" data-win-bind="innerText: displayName"></div>
-                <div class="purpleText largeText" id="mpgDisplay" data-win-bind="innerText: displayMileage"></div>
+                <div class="purpleText largeText boldText" id="mpgDisplay" data-win-bind="innerText: displayMileage"></div>
                 <div class="greyText smallText" id="mpgLabel" data-win-res="{textContent: 'mpg'}"></div>
                 <div class="greyText smallText" id="dateLabel" data-win-bind="innerText: displayDate"></div>
+            </div>
+            <div id="homepageNoData" class="homepageMain">
+                <div class="purpleText mediumText semiBoldText" id="noDataHeader"></div>
+                <div class="greyText smallText" id="noDataMessage"></div>
             </div>
             <button data-win-bind="onclick: navigateToSettingsCommand Binding.Mode.Command" class="win-command-disabled">go to Settings</button>
         </section>

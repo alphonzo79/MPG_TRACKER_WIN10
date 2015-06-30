@@ -1,2 +1,59 @@
 ﻿body {
 }
+
+.homepage {
+    height: 100%;
+    width: 100%;
+}
+
+.homepage section[role=main] {
+    width: 100%;
+    height: auto;
+}
+
+.homepageMain {
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+@media all and (orientation:landscape) {
+    .homepageMain {
+        height: inherit;
+        width: 50%;
+    }
+}
+
+@media all and (orientation:portrait) {
+    .homepageMain {
+        height: 50%;
+        width: 100%;
+    }
+}
+
+.purpleText {
+    color: #5555DD;
+}
+
+.greyText {
+    color: #AAAAAA;
+}
+
+.largeText {
+    font-size: large;
+}
+
+.mediumText {
+    font-size: medium;
+}
+
+.smallText {
+    font-size: small;
+}
+
+.semiBoldText {
+    font-weight: 600;
+}
+
+.boldText {
+    font-weight: 700;
+}

@@ -9,6 +9,8 @@
     <Content Include="$(MSBuildThisFileDirectory)components\helpers.js" />
     <Content Include="$(MSBuildThisFileDirectory)components\hooks.js" />
     <Content Include="$(MSBuildThisFileDirectory)components\navigator.js" />
+    <Content Include="$(MSBuildThisFileDirectory)components\provider\lokiCatalog.js" />
+    <Content Include="$(MSBuildThisFileDirectory)components\provider\storageProvider.js" />
     <Content Include="$(MSBuildThisFileDirectory)components\provider\navigation.js" />
     <Content Include="$(MSBuildThisFileDirectory)components\provider\network.js" />
     <Content Include="$(MSBuildThisFileDirectory)css\default.css" />
@@ -17,6 +19,7 @@
     <Content Include="$(MSBuildThisFileDirectory)images\splashscreen.scale-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)images\storelogo.scale-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)model\fillupModel.js" />
+    <Content Include="$(MSBuildThisFileDirectory)model\vehicleModel.js" />
     <Content Include="$(MSBuildThisFileDirectory)ui.js" />
     <Content Include="$(MSBuildThisFileDirectory)vendor\Microsoft.WinJS.4.0\css\ui-dark-intrinsics.css" />
     <Content Include="$(MSBuildThisFileDirectory)vendor\Microsoft.WinJS.4.0\css\ui-dark.css" />

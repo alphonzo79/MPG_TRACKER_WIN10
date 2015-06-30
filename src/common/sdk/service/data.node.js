@@ -75,27 +75,15 @@ var members = {
             return callback();
     },
 
-    contributorCollection: {
-        get: function () {
-            return this._db.getCollection("contributors");
+    vehiclesCollection: {
+        get: function() {
+            return this._db.getCollection("vehicles");
         }
     },
 
-    eventCollection: {
-        get: function () {
-            return this._db.getCollection("events");
-        }
-    },
-
-    mediaCollection: {
-        get: function () {
-            return this._db.getCollection("media");
-        }
-    },
-
-    feedSourceCollection: {
-        get: function () {
-            return this._db.getCollection("feedSources");
+    fillupsCollection: {
+        get: function() {
+            return this._db.getCollection("fillups");
         }
     },
 

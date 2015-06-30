@@ -10,6 +10,8 @@ define(function (require, exports, module) {
             "components/hooks.js",
             "components/provider/navigation.js",
             "components/provider/network.js",
+            "components/provider/storageProvider.js",
+            "components/provider/lokiCatalog.js",
             "components/navigator.js"],
         styles: [
             'vendor/Microsoft.WinJS.4.0/css/ui-dark.css',
