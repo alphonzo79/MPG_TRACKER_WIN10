@@ -13,6 +13,28 @@ var instanceMembers = {
         baseViewModel.prototype.onDataSet.call(this, arguments);
         this.dispatchEvent('loaded');
     },
+    navigateToLogCommand: {
+        get: function () {
+            var that = this;
+            return new relayCommand(function () {
+                var messageService = main.getComponent("messageService");
+                messageService.send("NavigateToMessage", {
+                    viewKey: "logFillUp"
+                });
+            });
+        }
+    },
+    navigateToReportsCommand: {
+        get: function () {
+            var that = this;
+            return new relayCommand(function () {
+                var messageService = main.getComponent("messageService");
+                messageService.send("NavigateToMessage", {
+                    viewKey: "reports"
+                });
+            });
+        }
+    },
     navigateToSettingsCommand: {
         get: function () {
             var that = this;

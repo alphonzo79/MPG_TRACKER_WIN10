@@ -13,13 +13,24 @@ var instanceMembers = {
 
         this.dispatchEvent('loaded');
     },
-    navigateToHomeCommand: {
+    navigateToAboutCommand: {
         get: function () {
             var that = this;
             return new relayCommand(function () {
                 var messageService = main.getComponent("messageService");
                 messageService.send("NavigateToMessage", {
-                    viewKey: "home"
+                    viewKey: "about"
+                });
+            });
+        }
+    },
+    navigateToAddCommand: {
+        get: function () {
+            var that = this;
+            return new relayCommand(function () {
+                var messageService = main.getComponent("messageService");
+                messageService.send("NavigateToMessage", {
+                    viewKey: "addVehicle"
                 });
             });
         }

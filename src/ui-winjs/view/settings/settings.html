@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Settings Screen</title>
+    <title>Setting</title>
 
     <link href="/css/default.css" rel="stylesheet" />
     <link href="/view/settings/settings.css" rel="stylesheet" />
@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- The content that will be loaded and displayed. -->
-    <div class="fragment homepage">
+    <div class="fragment settings">
         <header aria-label="Header content" role="banner">
             <h1 class="titlearea win-type-ellipsis">
                 <span class="pagetitle">Settings Screen</span>
@@ -18,7 +18,20 @@
             <button data-win-control="WinJS.UI.BackButton"></button>
         </header>
         <section aria-label="Main content" role="main">
-            <button data-win-bind="onclick: navigateToHomeCommand Binding.Mode.Command" class="win-command-disabled">go to Home</button>
+            <div class="listItemTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+                <div class="basicListTextItem" data-win-bind="textContent: text"></div>
+            </div>
+            <div id="addVehicle" class="settingsButton" data-win-bind="onclick: navigateToAddCommand Binding.Mode.Command"  data-win-res="{textContent: 'add_vehicle'}"></div>
+            <div id="about" class="settingsButton" data-win-bind="onclick: navigateToAboutCommand Binding.Mode.Command" data-win-res="{textContent: 'about'}"></div>
+            <div id="myVehicles" class="settingsSectionHeader" data-win-res="{textContent: 'my_vehicles'}"></div>
+            <!--<div id="listView" class="win-selectionstylefilled" data-win-control="WinJS.UI.ListView"
+                 data-win-options="{
+                    itemDataSource: Settings.ListView.data.dataSource,
+                    itemTemplate: select('.listItemTemplate'),
+                    selectionMode: 'single',
+                    tapBehavior: 'directSelect',
+                    layout: { type: WinJS.UI.ListLayout }
+                 }"></div>-->
         </section>
     </div>
 </body>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Log A FillUp</title>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="logFillUp.css" rel="stylesheet" />
+    <script src="logFillUp.js"></script>
+</head>
+<body>    
+    <!-- The content that will be loaded and displayed. -->
+    <div class="logFillUp fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Welcome to logFillUp</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <p>Content goes here.</p>
+            <button data-win-bind="onclick: navigateToHomeCommand Binding.Mode.Command" class="win-command-disabled">go to Home</button>
+        </section>
+    </div>
+</body>
+</html>

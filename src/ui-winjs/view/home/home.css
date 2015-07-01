@@ -7,24 +7,53 @@
 }
 
 .homepage section[role=main] {
-    width: 100%;
-    height: auto;
+    display: table;
+    width: inherit;
+    height: inherit;
+    padding: 2px 2px 2px 2px;
 }
 
 .homepageMain {
     background-color: #EEEEEE;
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+}
+
+.homepageButton {
+    background-color: #5555DD;
+    padding: 25px 25px 25px 25px;
+    margin: 2px;
     text-align: center;
 }
 
 @media all and (orientation:landscape) {
     .homepageMain {
-        height: inherit;
+        position: inherit;
+        display: table-cell;
         width: 50%;
+        margin: 2px;
+    }
+
+    .homepageMainInner {
+        position:relative;
+        margin: auto 0;
+    }
+
+    .homePageButtons {
+        display: table-cell;
+        margin-left: 1px;
     }
 }
 
 @media all and (orientation:portrait) {
     .homepageMain {
+        display: inline-block;
+        height: 50%;
+        width: 100%;
+    }
+
+    .homePageButtons {
+        display:inline-block;
         height: 50%;
         width: 100%;
     }
@@ -36,6 +65,10 @@
 
 .greyText {
     color: #AAAAAA;
+}
+
+.whiteText {
+    color: #FFFFFF;
 }
 
 .largeText {

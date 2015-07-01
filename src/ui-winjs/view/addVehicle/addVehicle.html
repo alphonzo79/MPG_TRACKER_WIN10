@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Add A Vehicle</title>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="addVehicle.css" rel="stylesheet" />
+    <script src="addVehicle.js"></script>
+</head>
+<body>
+    <div class="addVehicle fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Add A Vehicle</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <select class="win-dropdown" data-win-control="WinJS.UI.Repeater" data-win-options="{data: Years.items}">
+                <option data-win-bind="value: id; textContent: description"></option>
+            </select>
+            <select class="win-dropdown" data-win-control="WinJS.UI.Repeater" data-win-options="{data: Years.items}">
+                <option data-win-bind="value: id; textContent: description"></option>
+            </select>
+            <select class="win-dropdown" data-win-control="WinJS.UI.Repeater" data-win-options="{data: Years.items}">
+                <option data-win-bind="value: id; textContent: description"></option>
+            </select>
+        </section>
+    </div>
+</body>
+</html>
