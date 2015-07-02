@@ -18,6 +18,12 @@
     <Content Include="$(MSBuildThisFileDirectory)images\smalllogo.scale-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)images\splashscreen.scale-100.png" />
     <Content Include="$(MSBuildThisFileDirectory)images\storelogo.scale-100.png" />
+    <Content Include="$(MSBuildThisFileDirectory)model\edmundsMakeModel.js" />
+    <Content Include="$(MSBuildThisFileDirectory)model\edmundsModelModel.js" />
+    <Content Include="$(MSBuildThisFileDirectory)model\edmundsModelYearModel.js" />
+    <Content Include="$(MSBuildThisFileDirectory)model\edmundsStyle.js" />
+    <Content Include="$(MSBuildThisFileDirectory)model\edmundsSubmodelModel.js" />
+    <Content Include="$(MSBuildThisFileDirectory)model\edmundsYearModel.js" />
     <Content Include="$(MSBuildThisFileDirectory)model\fillupModel.js" />
     <Content Include="$(MSBuildThisFileDirectory)model\vehicleModel.js" />
     <Content Include="$(MSBuildThisFileDirectory)ui.js" />

@@ -17,13 +17,16 @@
             </h1>
         </header>
         <section class="page-section" aria-label="Main content" role="main">
-            <select class="win-dropdown" data-win-control="WinJS.UI.Repeater" data-win-options="{data: Years.items}">
+            <select id="yearSelect" class="win-dropdown" data-win-control="WinJS.UI.Repeater" data-win-options="{data: Years.items}">
                 <option data-win-bind="value: id; textContent: description"></option>
             </select>
-            <select class="win-dropdown" data-win-control="WinJS.UI.Repeater" data-win-options="{data: Years.items}">
+            <select id="makesSelect" class="win-dropdown" data-win-control="WinJS.UI.Repeater" data-win-options="{data: MakesForYear.makes}">
+                <option data-win-bind="value: id; textContent: name"></option>
+            </select>
+            <select id="modelsSelect" class="win-dropdown" data-win-control="WinJS.UI.Repeater" data-win-options="{data: ModelsForMake.models}">
                 <option data-win-bind="value: id; textContent: description"></option>
             </select>
-            <select class="win-dropdown" data-win-control="WinJS.UI.Repeater" data-win-options="{data: Years.items}">
+            <select id="trimSelect" class="win-dropdown" data-win-control="WinJS.UI.Repeater" data-win-options="{data: TrimsForModel.trims}">
                 <option data-win-bind="value: id; textContent: description"></option>
             </select>
         </section>
